@@ -6,71 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Vera, cv, resume">
     <meta name="description" content="Это сайт-резюме Вера Овсянниковой">
+    <link rel="stylesheet" href="styles.css">
     <title>Vera resume</title>
+    
 </head>
 <body>
-    <img src="Foto.jpg" alt="Фото Веры" width="180">
-    <h1>Вера Овсянникова</h1>
-  <p><strong>Я работаю <em>дессинатором</em></strong></p>
-  <p><em> Люблю вышивать бисером и путешествовать </em></p>  
-  <h2>Список социальных сетей:</h2>
-  <h3>
-    <a href="https://vk.com/id10592690" target="_blank">VK</a>
-     I 
-    <a href="https://instagram.com/kichnurev/" target="_blank">Instagram</a>
-  </h3>
-  <h2>
+
+  <div class="conteiner">
+
+
+    <div class="info" >
+      
+      <img src="Foto.jpg" alt="Фото Веры" class="avatar">
+     
+
+      <div class="info-text">
+        <h4>Вера Овсянникова</h4>
+
+        <p><strong>Я работаю <em>дессинатором</em></strong></p>
+        <p><em> Люблю вышивать бисером и путешествовать </em></p>  
+      
+        <h4>Список социальных сетей:</h4>
+        <p>
+        <a href="https://vk.com/id10592690" target="_blank">VK</a>
+      I 
+        <a href="https://instagram.com/kichnurev/" target="_blank">Instagram</a>
+        
+        </p>
+      </div>
+    </div>
+
+  
+  <div class="card bg-yellow"  >
+    <h3>
     Мои хобби
-    <ul>
+      <ul class="list">
         <li>Вышивание</li>
         <li>Вязание</li>
         <li>Чтение</li>
         <li>Путешествия</li>
-    </ul>
-  </h2>
-  <h2>Опыт работы</h2>
-  <table>
-    <thead>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Академ_текстиль</td>
-        <td>Дессинатор</td>
-        <td>2008-2014</td>
-    </tr>
-    <tr>
-        <td>Тавитта</td>
-        <td>Дессинатор</td>
-        <td>2014-2021</td>
-    </tr>
-    <tr>
-        <td>Sodamoda</td>
-        <td>Дессинатор</td>
-        <td>2021-наст.время</td>
-    </tr>
-    </tbody>
-  </table>
-  <h2>Связаться со мной</h2>
-    <form action="">
+      </ul>
+    </h3>
+  </div>
+
+
+    <div class="card bg-greeen">
+      <h3>Опыт работы</h3>
+
+        <table class="table">
+         <!--  <thead>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+          </thead> -->
+          <tbody>
+          <tr>
+              <td>Академ_текстиль</td>
+              <td>Дессинатор</td>
+              <td>2008-2014</td>
+          </tr>
+          <tr>
+              <td>Тавитта</td>
+              <td>Дессинатор</td>
+              <td>2014-2021</td>
+          </tr>
+          <tr>
+              <td>Sodamoda</td>
+              <td>Дессинатор</td>
+              <td>2021-наст.время</td>
+          </tr>
+          </tbody>
+        </table>
+    </div>
+  
+    <div class="card bg-pink">
+      <h3>Курсы Владилена Минина</h3>
+
+      <h3>
+        <ul class="link-list">
+          <li>
+            <a href="https://result.school/products/junior-js" target="_blanck">Получение профессии Frontend разработчика </a></li>
+          <br>
+          <li>
+            <a href="https://result.school/products" target="_blanck">Все курсы </a></a>
+          </li>
+      </ul>
+      </h3>
+    </div>
+ 
+    
+
+      <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" placeholder="Введите имя">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Ваш email</label>
+          <input type="email"  id="email" placeholder="Введите email">
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label for="massage">Сообщение</label>
+          <textarea id="massage" cols="30" rows="4" placeholder="Введите сообщение..."></textarea>
+        </div>
+
       <div>
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите имя">
-      </div>
-      <div>
-        <label for="email">Ваш email</label>
-        <input type="email"  id="email" placeholder="Введите email">
-      </div>
-      <div>
-        <label for="massage">Сообщение</label>
-        <br>
-        <textarea id="massage" cols="30" rows="4" placeholder="Введите сообщение..."></textarea>
-      </div>
-      <div>
-        <button type="submit">Отправить!</button>
+        <button type="submit" class="btn">Отправить!</button>
       </div>
     </form>
+  </div>
+
 </body>
+
 </html>
